@@ -9,6 +9,8 @@ public class Main {
 
         Scanner scanner = new Scanner(System.in);
 
+        String newString = "abc";
+
         while (true) {
             System.out.print("Enter english character: ");
 
