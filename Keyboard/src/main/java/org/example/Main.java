@@ -31,6 +31,6 @@ public class Main {
 
         start = System.nanoTime();
         System.out.println(arrows.countArrowsPossiblyAdvanced(test));
-        System.out.println(System.nanoTime() - start);
+        //System.out.println(System.nanoTime() - start);
     }
 }
