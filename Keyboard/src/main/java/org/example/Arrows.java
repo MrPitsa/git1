@@ -2,11 +2,11 @@ package org.example;
 
 public class Arrows {
 
-    private String leftArrow = "<--<<";
+    private String LEFT_ARROW = "<--<<";
     private String rightArrow = ">>-->";
 
     public int countArrows(String text) {
-        return countArrows(text, leftArrow) +
+        return countArrows(text, LEFT_ARROW) +
                 countArrows(text, rightArrow);
 //        return countArrowsNotAdvanced(text);
     }
@@ -23,12 +23,12 @@ public class Arrows {
     }
 
     private int countArrowsNotAdvanced(String text) {
-        final int ARROW_LEN = leftArrow.length();
+        final int ARROW_LEN = LEFT_ARROW.length();
         int count = 0;
         int index = 0;
         while ((index + ARROW_LEN) <= text.length()) {
             String substring = text.substring(index, index + ARROW_LEN);
-            if (substring.equals(leftArrow) || substring.equals(rightArrow)) {
+            if (substring.equals(LEFT_ARROW) || substring.equals(rightArrow)) {
                 count++;
                 index += ARROW_LEN;
             } else {
